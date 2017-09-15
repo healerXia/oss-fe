@@ -1,0 +1,65 @@
+
+*{
+    box-sizing:border-box;
+    font-family:"微软雅黑";
+    outline:none;
+}
+
+body{
+    min-width:1250px;
+    background:$sidebarColor;
+    margin:0;
+    font-size:12px;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a{
+    color:$textColor;
+    text-decoration: none;
+    &:hover{
+        color:$textColor;
+        text-decoration: none;
+    }
+    &.disabled{
+        cursor:not-allowed;
+        color:$disabledColor;
+        pointer-events:none;
+        li{
+            cursor:not-allowed;
+            pointer-events:none;
+            color:$disabledColor !important;
+            &:hover{
+                background:transparent;
+            }
+        }
+    }
+}
+
+input,textarea,select,button{
+    border-radius:2px !important;
+}
+
+input::-webkit-input-placeholder {
+    color:$placeholderColor;
+}
+
+input:-moz-placeholder {
+    color:$placeholderColor;
+}
+
+input::-moz-placeholder {
+    color:$placeholderColor;
+}
+
+input:-ms-input-placeholder {
+    color:$placeholderColor;
+}

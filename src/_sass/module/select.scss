@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+
+.jq-select-box{
+	$height:38px;
+	position:relative;
+	box-sizing:border-box;
+	width:200px;
+	height:$height;
+	color:$textColor;
+	*{
+		box-sizing:border-box;
+	}
+	position:relative;
+	.jq-selected-item{
+		font-size:12px;
+		height:$height;
+		position:relative;
+		input{
+			width:100%;
+			height:$height;
+			border:1px solid $borderColor;
+			padding:0 25px 0 5px;
+			color:$textColor;
+		}
+		.jq-input-icon{
+			position:absolute;
+			top:1px;
+			right:1px;
+			height:36px;
+			width:36px;
+			padding: 5px;
+			text-align:center;
+			line-height: 36px;
+			background:$selectIconColor;
+			span{
+				font-size:25px;
+				color:$textColor;
+			}
+			span.icon-custom-arrow-up{
+				font-size:26px;
+				display: none;
+			}
+		}
+
+		&.jq-select-opend{
+			.jq-input-icon{
+				transform: rotate(180deg);
+			}
+		}
+	}
+	.jq-select-drop{
+		padding: 15px 0;
+		border:1px solid $borderColor;
+		font-size:13px;
+		position:absolute;
+		display:none;
+		width:100%;
+		z-index: 99;
+		background:#ffffff;
+		margin-top: -1px;
+		border-radius:2px;
+		.jq-search-box{
+			width:100%;
+			margin-bottom:10px;
+			height:25px;
+			padding:0 15px;
+			input.ivu-input{
+				height:25px;
+				color:$textColor;
+			}
+			i{
+				height:25px;
+				line-height:25px;
+				right: 15px;
+			}
+		}
+		.jq-item-list{
+			.jq-list-header{
+				padding:0 15px;
+				margin:10px 0;
+				font-size:12px;
+			}
+			.jq-list-footer{
+				padding:0 15px;
+				margin:10px 0 0;
+				border-top:1px solid $borderColor;
+				padding:15px 10px 0;
+			}
+			.jq-list-body{
+				max-height:240px;
+				overflow:auto;
+				.jq-select-empty{
+					padding:0 15px;
+					line-height: 25px;
+					height: 35px;
+				}
+				.jq-item{
+					// padding:5px 0 5px;
+					height:35px;
+					.jq-check-item{
+						float:right;
+						display:inline-block;
+						color:$textColor;
+						font-size:20px;
+						cursor:pointer;
+					}
+					.jq-check-item.active{
+						color:$primaryColor;
+					}
+					label,.jq-single-item{
+						height:35px;
+						line-height:25px;
+						display:inline-block;
+						word-break:keep-all;
+					    white-space:nowrap;
+					    overflow:hidden;
+					    text-overflow:ellipsis;
+					    width:calc(100% - 25px);
+					}
+					.jq-multi-item{
+						padding:0 15px;
+					}
+					.jq-single-item{
+						cursor:pointer;
+						width:100%;
+						padding:5px 15px;
+						&.jq-item-hover{
+							background:$selectedColor;
+						}
+
+						&:hover{
+							background:$selectedColor;
+						}
+					}
+				}
+			}
+			a{
+				text-decoration:none;
+				cursor:pointer;
+			}
+			
+			span,.jq-ok{
+				float:right;
+			}
+		}
+	}
+}

@@ -1,0 +1,176 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?yzny5q');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?yzny5q#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?yzny5q') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?yzny5q') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?yzny5q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"],
+.ivu-icon-android-checkbox-outline-blank,
+.ivu-icon-android-checkbox,
+.ivu-checkbox-inner,
+.ivu-select-arrow,
+.ivu-icon-ios-arrow-down,
+.ivu-modal-close .ivu-icon-ios-close-empty{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-custom-arrow-down {
+  &:before {
+    content: $icon-custom-arrow-down;
+  }
+}
+.icon-custom-arrow-up {
+  &:before {
+    content: $icon-custom-arrow-up;
+  }
+}
+.icon-custom-checked {
+  &:before {
+    content: $icon-custom-checked;
+  }
+}
+.icon-custom-close-circle {
+  &:before {
+    content: $icon-custom-close-circle;
+  }
+}
+.icon-custom-close {
+  &:before {
+    content: $icon-custom-close;
+  }
+}
+.icon-custom-delete {
+  &:before {
+    content: $icon-custom-delete;
+  }
+}
+.icon-custom-down-button {
+  &:before {
+    content: $icon-custom-down-button;
+  }
+}
+.icon-custom-dsp {
+  &:before {
+    content: $icon-custom-dsp;
+  }
+}
+.icon-custom-empty-arrow {
+  &:before {
+    content: $icon-custom-empty-arrow;
+  }
+}
+.icon-custom-empty .path1 {
+  &:before {
+    content: $icon-custom-empty-path1;  
+    color: rgb(242, 243, 244);
+  }
+}
+.icon-custom-empty .path2 {
+  &:before {
+    content: $icon-custom-empty-path2;  
+    margin-left: -1em;  
+    color: rgb(168, 168, 168);
+  }
+}
+.icon-custom-exit {
+  &:before {
+    content: $icon-custom-exit;
+  }
+}
+.icon-custom-help {
+  &:before {
+    content: $icon-custom-help;
+  }
+}
+.icon-custom-jy {
+  &:before {
+    content: $icon-custom-jy;
+  }
+}
+.icon-custom-message {
+  &:before {
+    content: $icon-custom-message;
+  }
+}
+.icon-custom-ok {
+  &:before {
+    content: $icon-custom-ok;
+  }
+}
+.icon-custom-unchecked {
+  &:before {
+    content: $icon-custom-unchecked;
+  }
+}
+.icon-custom-user {
+  &:before {
+    content: $icon-custom-user;
+  }
+}
+.icon-custom-xt {
+  &:before {
+    content: $icon-custom-xt;
+  }
+}
+.icon-custom-zy {
+  &:before {
+    content: $icon-custom-zy;
+  }
+}
+.icon-custom-zybs {
+  &:before {
+    content: $icon-custom-zybs;
+  }
+}
+
+
+//iview icon change
+.ivu-icon-android-checkbox-outline-blank{
+  &:before {
+    content: $icon-custom-unchecked;
+  }
+}
+.ivu-icon-android-checkbox{
+  &:before {
+    content: $icon-custom-checked;
+  }
+}
+.ivu-checkbox-inner{
+  &:before {
+    content: $icon-custom-checked;
+  }
+}
+.ivu-select-arrow{
+  &:before {
+    content: $icon-custom-arrow-down;
+  }
+}
+.ivu-icon-ios-arrow-down{
+  &:before {
+    content: $icon-custom-empty-arrow;
+  }
+}
+.ivu-modal-close  .ivu-icon-ios-close-empty{
+  &:before {
+    content: $icon-custom-close-circle;
+  }
+}

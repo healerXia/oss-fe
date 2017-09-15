@@ -1,0 +1,104 @@
+
+.header{
+	box-shadow:0 0 3px rgba(0,0,0,0.35);
+	box-sizing:border-box;
+	position:relative;
+	height:60px;
+	z-index:5;
+	background:#ffffff;
+	
+	.logo{
+		padding-left: 22px;
+		height:22px;
+		img{
+			height:22px;
+			border: none;
+		}
+		padding-right:10px;
+		margin-right:10px;
+		border-right:1px solid #d8d8d8;
+	}
+	.logo_name{
+		width:200px;
+		font-size: 14px;
+		color:$textColor;
+		font-weight: bold;
+	}
+	
+	.user{
+		flex:1;
+		width:300px;
+		padding-right:40px;
+		*{
+			text-align:center;
+		}
+		.username{
+			font-size: 12px;
+			margin-right: 30px !important;
+		}
+		span:first-child{
+			margin-right: 1px;
+		}
+		span{
+			font-size: 23px;
+			margin-left:10px;
+			color:$textColor;
+			cursor: pointer;
+		}
+		img{
+			margin-top: 2px;
+			margin-right: 20px;
+		}
+		.user_menu{
+			a{
+				display:block;
+			}
+		}
+	}
+	
+}
+
+//layout component
+.layout{
+	.left{
+		width:200px;
+		float:left;
+	}
+
+	.right{
+		background:$rightBgColor;
+		// padding:20px 30px 10px;
+		float:left;
+		.menu_level3_wrap{
+			padding:50px 30px 0;
+			background:$filterColor;
+		}
+		.filter_wrap{
+			margin-bottom:30px;
+			padding:35px 30px;
+			background:$filterColor;
+		}
+
+		.menu_level3_wrap + div{
+			.filter_wrap{
+				padding:15px 30px 35px;
+			}
+		}
+
+		.table_wrap{
+			padding:0 30px;
+		}
+	}
+
+	.footer{
+		height: 90px;
+		background:$rightBgColor;
+		line-height:30px;
+		font-size:13px;
+		color:$textColorLight;
+		padding:30px 0;
+		// border-right:200px solid #ffffff;
+		// border-left:200px solid $sidebarColor;
+	}
+}
+

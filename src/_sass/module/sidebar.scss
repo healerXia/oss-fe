@@ -1,0 +1,136 @@
+
+.sidebar{
+	background:$sidebarColor;
+	ul.ivu-menu.ivu-menu-vertical{
+		font-size:14px;
+		color:$sideBarItemNotActive;
+		&>a{
+			display:block;
+		}
+		
+		.menu_item_level1{
+			color:$sideBarItemNotActive;
+			background:$sidebarColor;
+			padding:19px 20px;
+			font-size:14px;
+			position:relative;
+			height:58px;
+			transition: none;
+			*{
+				display:inline-block;
+				vertical-align:middle;
+			}
+			.menu_icon{
+				margin-right:15px;
+				font-size:16px;
+			}
+		}
+
+		.menu_item_level1.ivu-menu-item-active{
+			color:#ffffff;
+			border-right: none;
+			padding-left:16px;
+			border-left:4px solid $primaryColor;
+			background:$sidebarSelectColor;
+			.menu_icon{
+				color:#ffffff;
+			}
+			&:before{
+				border:none;
+				background:$primaryColor;
+			}
+		}
+		
+
+		.submenu{
+			a{
+				display:inline;
+				margin-bottom:0;
+			}
+			.menu_item_level2{
+				color:$sideBarItemNotActive;
+				background:$sidebarColor;
+				padding:12px 20px 12px 52px;
+				font-size:14px;
+				position:relative;
+				height:45px;
+				&:before{
+					box-sizing:border-box;
+					content:"";
+					display:block;
+					position:absolute;
+					width:6px;
+					height:6px;
+					border-radius:50%;
+					left:27px;
+					top:18px;
+					border:1px solid $sideBarItemNotActive;
+				}
+				&.ivu-menu-item-active{
+					color:#ffffff;
+					border-right: none;
+					&:before{
+						border:none;
+						background:$primaryColor;
+					}
+				}
+			}
+
+			.ivu-menu-submenu-title{
+				padding:19px 20px;
+				height:58px;
+				background:$sidebarColor;
+				transition: none;
+				*{
+					display:inline-block;
+					vertical-align:middle;
+				}
+				.menu_icon{
+					margin-right:15px;
+					font-size:16px;
+				}
+				span{
+					line-height:20px;
+					color:$sideBarItemNotActive;
+				}
+				i{
+					top:0;
+				}
+				i:before{
+					font-size: 25px;
+					content:"\e908";
+				}
+				
+			}
+
+			&.ivu-menu-opened {
+				.ivu-menu-submenu-title{
+					.menu_icon{
+						color:#ffffff;
+					}
+					padding-left:16px;
+					border-left:4px solid $primaryColor;
+					background:$sidebarSelectColor;
+					span{
+						color:#ffffff;
+					}
+					i:before{
+						content:"\e900";
+					}
+				}
+			}
+		}
+
+
+
+		
+
+		a,li.submenu{
+			display:block;
+		}
+	}
+	ul.ivu-menu:after{
+		content:none !important;
+	}
+
+}
